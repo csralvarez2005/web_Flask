@@ -1,10 +1,103 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    text-align: center;
-    margin-top: 100px;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+    color: #333;
 }
 
-h1 {
+header {
+    background: #fff;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
     color: #333;
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 2em;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-img img {
+    width: 350px;
+    border-radius: 15px;
+}
+
+.tag {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.name {
+    color: #007bff;
+}
+
+.buttons .btn {
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    margin-right: 1em;
+    color: #007bff;
+    transition: 0.3s;
+}
+
+.buttons .primary {
+    background: #007bff;
+    color: #fff;
+}
+
+.buttons .btn:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background: #fff;
+    margin: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.details, .bio {
+    flex: 1;
+    margin-right: 2em;
+}
+
+.highlight {
+    color: #007bff;
+}
+
+.signature {
+    font-family: 'Cursive', sans-serif;
+    font-size: 1.2em;
+    margin-top: 1em;
 }

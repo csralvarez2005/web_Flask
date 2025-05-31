@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Página Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Downey - Portfolio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>¡Hola Mundo desde Flask!</h1>
-    <p>Esta es una página web básica usando Python.</p>
+    <header>
+        <nav>
+            <div class="logo">Queue</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <p class="tag">🎯 Looking for a Designer!</p>
+            <h1>Here I'm <span class="name">Queue Downey</span></h1>
+            <p>Web Developer with over 3 years of experience. Experienced with all stages of the development cycle.</p>
+            <div class="buttons">
+                <a href="#" class="btn primary">Hire Me</a>
+                <a href="#" class="btn">Download CV</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Image">
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="details">
+            <h3>Personal Details</h3>
+            <p><strong>Email:</strong> queue@portfolio.com</p>
+            <p><strong>Languages:</strong> English</p>
+            <p><strong>Nationality:</strong> Australian</p>
+        </div>
+        <div class="bio">
+            <h3>I Am <span class="highlight">Web Developer</span></h3>
+            <p>Obviously I'm a Web Designer. Web Developer with over 3 years of experience. Experienced with all stages of the development cycle for dynamic web projects.</p>
+            <p class="signature">Queue Downey</p>
+        </div>
+    </section>
 </body>
 </html>
